@@ -1,0 +1,125 @@
+@use '../global';
+
+main{
+    background: #F8F8F8;
+    .main__top{
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        display: flex !important;
+        flex-direction: column;
+        h1{
+            margin-bottom: 40px;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: 0.03em;
+            text-transform: capitalize;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: #BB2339;
+        }
+        .owl-carousel, .owl-theme {
+            display: flex;
+            .owl-dots {
+                display: none;
+            }
+        
+            .owl-dot span {
+                transition: all 0.5s ease !important;
+                -webkit-transition: all 0.5s ease !important;
+                -moz-transition: all 0.5s ease !important;
+                -ms-transition: all 0.5s ease !important;
+                -o-transition: all 0.5s ease !important;
+            }
+        
+            .owl-dot.active span {
+                display: inline-block;
+                background-color: #f53838 !important;
+            }
+        
+            .owl-nav {
+                position: absolute;
+                top: -10px;
+                right: 35px;
+                // transform: translateY(-50%);
+                // width: 100%;
+                display: flex;
+                gap: 50px;
+                align-items: center;
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+            }   
+            .owl-nav button * {
+                position: absolute;
+                top: -60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ffffff;
+                padding: 10px 10px 10px 15px;
+                border: 1px solid #646464;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+            }
+            .owl-nav span{
+                font-size: 40px;
+                line-height: 20px;
+            }
+            .owl-nav span:hover{
+                color: black;
+            }
+            .owl-nav button *:hover {
+                // background: #f53838;
+            }
+        
+            .item {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 20px 20px 40px 20px;
+                background: #ffffff;
+                .contexts{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        font-family: 'Open Sans';
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #242424;
+                    }
+                    img{
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        max-width: 108px;
+                    }
+                    span{
+                        font-family: 'Open Sans';
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 33px;
+                        text-align: center;                        
+                        color: #BB2339;
+                    }
+                }
+            }
+        }
+        .stylist{
+            margin-top: 71px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: -50px;
+            right: 0;
+            margin-right: 0;
+        }
+    }
+}
