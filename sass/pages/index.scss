@@ -1,5 +1,90 @@
 @use '../global';
 
+header {
+    .home {
+        padding-top: 96px;
+        padding-bottom: 237px;
+
+        &__sides {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &__left {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 130%;
+                    letter-spacing: 0.04em;
+                    text-transform: capitalize;
+                    font-feature-settings: 'tnum' on, 'lnum' on;
+                    color: #FFFFFF;
+                }
+
+                h1 {
+                    max-width: 555px;
+                    font-weight: 700;
+                    font-size: 90px;
+                    line-height: 130%;
+                    letter-spacing: 0.04em;
+                    text-transform: capitalize;
+                    color: #FFFFFF;
+                }
+
+                span {
+                    max-width: 453px;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.04em;
+                    color: #FFFFFF;
+                }
+
+                .home__btn {
+                    width: 173px;
+                    height: 44px;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 100px;
+                    -webkit-border-radius: 100px;
+                    -moz-border-radius: 100px;
+                    -ms-border-radius: 100px;
+                    -o-border-radius: 100px;
+                }
+            }
+
+            &__right img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            &__sides {
+                flex-direction: column;
+                gap: 20px;
+
+                &__left {
+                    align-items: center;
+                }
+            }
+
+        }
+        @media (max-width: 540px) {
+            &__sides{
+                &__left{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
 main{
     background: #F8F8F8;
     .main__top{
@@ -111,6 +196,11 @@ main{
                 }
             }
         }
+        @media (max-width:540px) {
+            .owl-carousel, .owl-theme {
+                margin-top: 30px;
+            }
+        }
         .stylist{
             margin-top: 71px;
             display: flex;
@@ -120,6 +210,148 @@ main{
             bottom: -50px;
             right: 0;
             margin-right: 0;
+        }
+    }
+    .main__top__2{
+        background: #ffffff;
+        padding-top: 120px;
+        padding-bottom: 120px;
+        .meal__list{    
+            h1{
+                text-align: left;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: 0.03em;
+            text-transform: capitalize;
+            font-feature-settings: 'tnum' on, 'lnum' on;
+            color: #BB2339;
+            }
+            .meal__menus{
+                display: flex;
+                justify-content: space-between;
+                .meal{
+                    border: 1px solid #BB2339;
+                    border-radius: 100px;
+                    background: transparent;
+                    padding: 5px 30px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.05em;
+                    text-transform: capitalize;
+                    color: #242424;
+                    transition: 0.5s;
+                    -webkit-border-radius: 100px;
+                    -moz-border-radius: 100px;
+                    -ms-border-radius: 100px;
+                    -o-border-radius: 100px;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                }
+                .meal:hover{
+                    box-shadow: 0px 5px 50px -10px red;
+                    transform: translateY(5px);
+                    -webkit-transform: translateY(5px);
+                    -moz-transform: translateY(5px);
+                    -ms-transform: translateY(5px);
+                    -o-transform: translateY(5px);
+                }
+                .meal:focus{
+                    background: #BB2339;
+                    color: #FFFFFF;
+                }
+                .meal:focus:hover{
+                    transform: translateY(-5px);
+                    -webkit-transform: translateY(-5px);
+                    -moz-transform: translateY(-5px);
+                    -ms-transform: translateY(-5px);
+                    -o-transform: translateY(-5px);
+                }
+                
+            }
+            @media (max-width:1440px) {
+                .meal__menus {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    grid-gap: 10px 10px;
+                }
+            }
+            @media (max-width:768px) {
+                .meal__menus {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (max-width:540px) {
+                .meal__menus {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+            .meal__cards{
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 30px 20px;
+                .meal__card{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    padding: 20px 20px 40px 20px;
+                    background: #FFFFFF;
+                    transition: 0.5s;
+                    border: 1px solid rgba(36, 36, 36, 0.1);
+                    border-radius: 14px;
+                    -webkit-border-radius: 14px;
+                    -moz-border-radius: 14px;
+                    -ms-border-radius: 14px;
+                    -o-border-radius: 14px;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -ms-transition: 0.5s;
+                    -o-transition: 0.5s;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    p{
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #242424;
+                    }
+                    span{
+                        font-family: 'Open Sans';
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 33px;
+                        text-align: center;
+                        color: #BB2339;
+                    }
+                    &:hover{
+                        box-shadow: 0px 2px 20px -5px red;
+                        transform: translateY(-2px);
+                        -webkit-transform: translateY(-2px);
+                        -moz-transform: translateY(-2px);
+                        -ms-transform: translateY(-2px);
+                        -o-transform: translateY(-2px);
+                    }
+                }
+            }
+            @media (max-width:768px) {
+                .meal__cards {
+                    grid-template-columns: auto auto;
+                }
+            }
+            @media (max-width:540px) {
+                .meal__cards {
+                    grid-template-columns: auto;
+                }
+            }
         }
     }
 }
