@@ -548,6 +548,18 @@ main .main__bottom__2__elements .mb2__elements__left .more {
 main .main__bottom__2__elements .mb2__elements__right .next-btn {
   margin-left: 30px;
 }
+@media (max-width: 768px) {
+  main .main__bottom__2__elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  main .main__bottom__2__elements .mb2__elements__left {
+    align-items: center;
+    text-align: center;
+  }
+}
 main .main__space {
   max-width: 100%;
   height: 341px;
@@ -559,12 +571,12 @@ footer {
   background: #BB2339;
   width: 100%;
   padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 footer .footer__card {
-  padding-top: 64px;
-  padding-bottom: 64px;
-  padding-left: 297px;
-  padding-right: 297px;
+  max-width: 100%;
+  padding: 64px 297px;
   position: relative;
   top: -230px;
   background: #BB2339;
@@ -608,7 +620,7 @@ footer .footer__card h2 {
   color: #FFFFFF;
 }
 footer .footer__card h3 {
-  font-family: "Open Sans";
+  font-family: "Open Sans" sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
@@ -680,12 +692,25 @@ footer .footer__card form button {
   color: #FFFFFF;
 }
 @media (max-width: 1194px) {
-  footer .footer__card {
-    top: -300px;
+  footer .footer__card h2 {
+    width: 275px;
+    font-size: 24px;
+  }
+  footer .footer__card h3 {
+    width: 250px;
   }
   footer .footer__card form {
     display: flex;
     flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  footer .footer__card {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  footer .footer__card form input {
+    max-width: 275px;
   }
 }
 footer .footer__card:hover {
@@ -711,7 +736,7 @@ footer .footer__row__1 .footer__left h1 {
   color: #FFFFFF;
 }
 footer .footer__row__1 .footer__left p {
-  font-family: "Open Sans";
+  font-family: "Open Sans" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -735,7 +760,7 @@ footer .footer__row__1 .footer__center .logo {
 footer .footer__row__1 .footer__center p {
   margin-top: 32px;
   margin-bottom: 47px;
-  font-family: "Open Sans";
+  font-family: "Open Sans" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -773,7 +798,7 @@ footer .footer__row__1 .footer__right .schedule {
   gap: 1px;
 }
 footer .footer__row__1 .footer__right .schedule p {
-  font-family: "Open Sans";
+  font-family: "Open Sans" sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -782,16 +807,10 @@ footer .footer__row__1 .footer__right .schedule p {
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
-footer .footer__row__2 {
-  margin-top: 83px;
-}
-footer .footer__row__2 p {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 175%;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #FFFFFF;
+@media (max-width: 1200px) {
+  footer .footer__row__1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
 }
