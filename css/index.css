@@ -524,6 +524,8 @@ main .main__bottom__2__elements .mb2__elements__left h1 {
   color: #242424;
 }
 main .main__bottom__2__elements .mb2__elements__left span {
+  margin-top: 24px;
+  margin-bottom: 24px;
   max-width: 491px;
   font-family: "Open Sans";
   font-style: normal;
@@ -532,6 +534,16 @@ main .main__bottom__2__elements .mb2__elements__left span {
   line-height: 175%;
   letter-spacing: 0.04em;
   color: #AAAAAA;
+}
+main .main__bottom__2__elements .mb2__elements__left .more {
+  padding: 8px 32px;
+  border: 1px solid #BB2339;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #242424;
 }
 main .main__bottom__2__elements .mb2__elements__right .next-btn {
   margin-left: 30px;
@@ -736,6 +748,9 @@ footer .footer__row__1 .footer__center .contacting {
   display: flex;
   align-items: center;
   gap: 24px;
+}
+footer .footer__row__1 .footer__center p:last-child {
+  margin-top: 83px;
 }
 footer .footer__row__1 .footer__right {
   display: flex;

@@ -514,6 +514,8 @@ main{
                     color: #242424;
                 }
                 span{
+                    margin-top: 24px;
+                    margin-bottom: 24px;
                     max-width: 491px;
                     font-family: 'Open Sans';
                     font-style: normal;
@@ -522,6 +524,16 @@ main{
                     line-height: 175%;
                     letter-spacing: 0.04em;
                     color: #AAAAAA;
+                }
+                .more {
+                    padding: 8px 32px;
+                    border: 1px solid #BB2339;
+                    border-radius: 100px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.04em;
+                    color: #242424;
                 }
             }
             .mb2__elements__right{
@@ -721,6 +733,9 @@ footer{
                 display: flex;
                 align-items: center;
                 gap: 24px;
+            }
+            p:last-child {
+                margin-top: 83px;
             }
         }
         .footer__right{
