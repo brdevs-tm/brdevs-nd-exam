@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
+    <title>Contacts Us</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -15,12 +15,153 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Menu</li>
-      </ol>
-    </nav>
+    <header></header>
+    <main>
+      <div class="container">
+        <nav style="--bs-breadcrumb-divider: '|'" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Contact Us
+            </li>
+          </ol>
+        </nav>
+        <div class="main__top">
+          <div class="main__top__header">
+            <h1>Contact Us</h1>
+            <img src="images/home/icons/tennis.svg" alt="tennis" />
+          </div>
+          <div class="contacting__row">
+            <div class="contacting__left">
+              <div class="contacting__card">
+                <div class="card__left">
+                  <img src="images/contact/icons/phone.svg" alt="phone" />
+                </div>
+                <div class="card__right">
+                  <h1>Phone Number</h1>
+                  <span>+1 212-344-1230</span>
+                </div>
+              </div>
+              <div class="contacting__card">
+                <div class="card__left">
+                  <img src="images/contact/icons/mail.svg" alt="mail" />
+                </div>
+                <div class="card__right">
+                  <h1>Email Address</h1>
+                  <span>eaturkish@gmail.com</span>
+                </div>
+              </div>
+              <div class="contacting__card">
+                <div class="card__left">
+                  <img src="images/contact/icons/insta.svg" alt="insta" />
+                </div>
+                <div class="card__right">
+                  <h1>Instagram</h1>
+                  <span>eaturkish</span>
+                </div>
+              </div>
+              <div class="contacting__card">
+                <div class="card__left">
+                  <img src="images/contact/icons/twit.svg" alt="twit" />
+                </div>
+                <div class="card__right">
+                  <h1>Twitter</h1>
+                  <span>eaturkish</span>
+                </div>
+              </div>
+              <div class="contacting__card">
+                <div class="card__left">
+                  <img src="images/contact/icons/fb.svg" alt="fb" />
+                </div>
+                <div class="card__right">
+                  <h1>Facebook</h1>
+                  <span>eaturkish</span>
+                </div>
+              </div>
+            </div>
+            <div class="contacting__right">
+              <h1>Send Messege</h1>
+              <span
+                >If you have any questions, you can send us an SMS or contact us
+                by phone you can also contact us via social networks.</span
+              >
+              <form action="messaging">
+                <div class="first__row">
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    required
+                    autocomplete="off"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="second__row">
+                  <input
+                    type="number"
+                    placeholder="Phone number"
+                    required
+                    autocomplete="off"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    required
+                    autocomplete="off"
+                  />
+                </div>
+                <textarea
+                  name="message-text"
+                  id="message-text"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+                <button type="submit">Send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="main__bottom">
+          <div class="main__bottom__header"><h1>Find us by card</h1></div>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                width="1250"
+                height="703"
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Namangan%20Viloyati%20Kosonsoy%20tumani&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe
+              ><a href="https://123movies-i.net">shark tale 123movies</a
+              ><br /><style>
+                .mapouter {
+                  position: relative;
+                  text-align: right;
+                  height: 703px;
+                  width: 1250px;
+                }</style
+              ><a href="https://www.embedgooglemap.net">embed google maps</a
+              ><style>
+                .gmap_canvas {
+                  overflow: hidden;
+                  background: none !important;
+                  height: 703px;
+                  width: 1250px;
+                }
+              </style>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
